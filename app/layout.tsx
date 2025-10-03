@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BackgroundSlideshow } from "@/components/Background-slideshow"
+import { title } from "process"
 export default function RootLayout({
   children,
 }: {
@@ -14,10 +15,13 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} antialiased`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-        <BackgroundSlideshow />
-          <Navbar />
-          <main className="overflow-hidden">{children}</main>
-          <Footer />
+          <div className="overflow-hidden">
+            <BackgroundSlideshow />
+            <Navbar />
+            <main className="">{children}</main>
+            <Footer />
+          </div>
+
         </ThemeProvider>
       </body>
     </html>
@@ -25,5 +29,5 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  generator: "v0.app",
+  title: 'GBGROUP'
 }
