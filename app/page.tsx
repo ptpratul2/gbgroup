@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <>
       <HeroCarousel/>
-      <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12">
+      <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 px-8 ">
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 lg:grid-cols-2 lg:gap-12">
         <motion.div
           className="max-w-[700px] text-lg text-foreground md:text-xl text-justify"
@@ -119,7 +119,7 @@ export default function HomePage() {
           className="relative h-[300px] w-full md:h-[400px] lg:h-[500px]"
         >
           <Image
-            src="/family.png"
+            src="/images/family.png"
             alt="Late Amrit Lal Gupta"
             fill
             className="rounded-lg shadow-lg object-cover"

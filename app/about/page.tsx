@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12">
+    <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 px-8">
        <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 lg:grid-cols-2 lg:gap-12">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

@@ -87,8 +87,8 @@ export function HeroCarousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            >
-              <h1 className="mb-4 font-mono text-4xl font-extrabold text-white md:text-6xl lg:text-7xl">
+              >
+              <h1 className="mb-4 font-mono text-3xl font-extrabold text-white md:text-4xl lg:text-5xl">
                 <span className="text-primary">{slides[currentSlide].title}</span>
                 <br />
                 {slides[currentSlide].subtitle}

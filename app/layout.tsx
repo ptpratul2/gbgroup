@@ -16,7 +16,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <BackgroundSlideshow />
           <Navbar />
-          <main>{children}</main>
+          <main className="overflow-hidden">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
