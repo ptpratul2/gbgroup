@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export default function ContactPage() {
   return (
-    <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 px-4 ">
+    <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 px-8 ">
       <section className="container mx-auto max-w-8xl grid items-center gap-6 pb-8 pt-6 md:py-10 lg:grid-cols-2 lg:gap-12 ">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -66,7 +66,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="w-[90%] py-20 relative">
+      <section className="w-full py-20 relative">
         <div className="mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-black text-white mb-4">
@@ -78,7 +78,7 @@ export default function ContactPage() {
 
           <div className="bg-black/30 backdrop-blur-2xl border border-white/20 overflow-hidden">
             <div className="p-0">
-              <div className="h-150">
+              <div className="h-150 ">
                 <iframe
                   title="Office Location"
                   src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6884.888096043861!2d77.85087214632416!3d30.366746349051116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s11%2F2%2F2%2C%20Industrial%20Area%2C%20Selaqui%2C%20Dehradun-248197!5e0!3m2!1sen!2sin!4v1759122675477!5m2!1sen!2sin"
