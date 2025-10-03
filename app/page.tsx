@@ -82,16 +82,16 @@ export default function HomePage() {
               className="relative inline-block font-semibold text-primary cursor-pointer"
 
               transition={{ duration: 0.2 }}
-            >
+                >
               <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-              GB Springs Pvt. Ltd.
-            </motion.span>
-            ,{" "}
+
+               </motion.span>
+            
             <motion.span
               className="relative inline-block font-semibold text-primary cursor-pointer"
 
               transition={{ duration: 0.2 }}
-            >
+              >
               <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
               GB Equipment Systems Ltd.
             </motion.span>{" "}
@@ -102,7 +102,7 @@ export default function HomePage() {
               transition={{ duration: 0.2 }}
             >
               <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-              GB Herb Consultants Pvt. Ltd.
+              GB Petro Consultants Pvt. Ltd.
             </motion.span>
             , is committed to developing and directing CSR policies toward its employees, customers, suppliers, and
             the environment. The company retains its existing and new customers by delivering quality services,
@@ -119,7 +119,7 @@ export default function HomePage() {
           className="relative h-[300px] w-full md:h-[400px] lg:h-[500px]"
         >
           <Image
-            src="/images/family.png"
+            src="/hero/f.jpg"
             alt="Late Amrit Lal Gupta"
             fill
             className="rounded-lg shadow-lg object-cover"
@@ -393,7 +393,7 @@ export default function HomePage() {
           </motion.div>
           <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
             <Image src="/gallery/officeM.png" alt="GB Group Team Meeting" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors ">
               <p className="text-sm font-semibold text-white">
                 Team Meeting with Mr. Sameer Dhingra, Mr. Anirudh Gupta, and Mr. AK Raturi
               </p>

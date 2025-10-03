@@ -34,7 +34,7 @@ export default function ProductsPage() {
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection(medicalRef)}
               className="rounded-md bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md transition-colors hover:bg-primary/90"
-            >
+               >
               Medical Equipment
             </motion.button>
             <motion.button
@@ -63,9 +63,7 @@ export default function ProductsPage() {
         </motion.div>
       </section>
 
-
-
-      <section ref={medicalRef} className="container py-12 scroll-m-24">
+      <section ref={medicalRef} className="container py-12">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -198,7 +196,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Railway Equipment Section */}
-      <section className="container py-16">
+       <section ref={railwayRef} className="container py-12 ">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
