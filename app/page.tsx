@@ -54,128 +54,118 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroCarousel/>
+      <HeroCarousel />
       <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 px-8 ">
-      <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 lg:grid-cols-2 lg:gap-12">
-        <motion.div
-          className="max-w-[700px] text-lg text-foreground md:text-xl text-justify"
-          whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.3 }}
-        >
-          <motion.h1
-            className="flex h-20 items-center font-mono text-4xl font-extrabold leading-tight tracking-tighter text-primary md:text-5xl lg:text-6xl"
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            {text}
-            <motion.span
-              className="ml-2 h-12 w-1.5 bg-primary"
-              animate={{ opacity: [0, 1, 0] }}
-              transition={{ duration: 0.8, repeat: Number.POSITIVE_INFINITY }}
-            />
-          </motion.h1>
-
-          <p>
-            Manufacturers of: Railway, Automotive & Medical Equipment. Our mission is the relentless pursuit of
-            distinction, setting benchmarks in sectors crucial to India's development. The GB Group, which includes{" "}
-            <motion.span
-              className="relative inline-block font-semibold text-primary cursor-pointer"
-
-              transition={{ duration: 0.2 }}
-                >
-              <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-
-               </motion.span>
-            
-            <motion.span
-              className="relative inline-block font-semibold text-primary cursor-pointer"
-
-              transition={{ duration: 0.2 }}
-              >
-              <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-              GB Equipment Systems Ltd.
-            </motion.span>{" "}
-            &{" "}
-            <motion.span
-              className="relative inline-block font-semibold text-primary cursor-pointer"
-
-              transition={{ duration: 0.2 }}
-            >
-              <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-              GB Petro Consultants Pvt. Ltd.
-            </motion.span>
-            , is committed to developing and directing CSR policies toward its employees, customers, suppliers, and
-            the environment. The company retains its existing and new customers by delivering quality services,
-            ensuring a safe and healthy work environment for its employees. With innovative technologies, ethical
-            business practices, and ensuring transparency, accountability, & trust, the company also minimizes
-            environmental impacts. The GB Group shares a part of its profit with the underprivileged group and
-            impacted many lives positively.
-          </p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative h-[300px] w-full md:h-[400px] lg:h-[500px]"
-        >
-          <Image
-            src="/hero/f.jpg"
-            alt="Late Amrit Lal Gupta"
-            fill
-            className="rounded-lg shadow-lg object-cover"
-          />
-        </motion.div>
-      </section>
-      <section className="container py-12">
-        <motion.h2
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-8 text-center font-mono text-3xl font-bold text-primary md:text-4xl"
-        >
-          WHY US?
-        </motion.h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+        <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 lg:grid-cols-2 lg:gap-12">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="rounded-lg bg-card p-6 shadow-md"
+            className="max-w-[700px] text-lg text-foreground md:text-xl text-justify"
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 0.3 }}
           >
-            <h3 className="mb-4 font-mono text-2xl font-semibold text-primary">Our Values</h3>
-            <p className="text-foreground">
-              At the heart of our success is our unwavering commitment to our values. We believe in creating long-term
-              value for our stakeholders while also promoting social and environmental sustainability. We strive to be a
-              responsible corporate citizen, investing in the communities where we operate and supporting initiatives
-              that promote education, healthcare, and other social causes. We aim to continue to innovate and explore
-              new avenues of growth while remaining true to the values. We are committed to making a positive difference
-              in the world by standing together with the community.
+            <motion.h1
+              className="flex h-20 items-center font-mono text-4xl font-extrabold leading-tight tracking-tighter text-primary md:text-5xl lg:text-6xl"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              {text}
+              <motion.span
+                className="ml-2 h-12 w-1.5 bg-primary"
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ duration: 0.8, repeat: Number.POSITIVE_INFINITY }}
+              />
+            </motion.h1>
+
+            <p>
+              Manufacturers of Railway, Automotive, and Medical Equipment. Our mission is the relentless pursuit of excellence, setting new benchmarks in sectors vital to India's progress. The GB Group, which includes{" "}
+              <motion.span
+                className="relative inline-block font-semibold text-primary cursor-pointer"
+
+                transition={{ duration: 0.2 }}
+              >
+                <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
+                G.B. Equipment Systems Limited
+              </motion.span>{" "}
+              &{" "}
+              <motion.span
+                className="relative inline-block font-semibold text-primary cursor-pointer"
+
+                transition={{ duration: 0.2 }}
+              >
+                <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
+                G.B. Herbs Private Limited
+              </motion.span>{" "}
+              is committed to developing and directing CSR policies toward its employees, customers, suppliers, and
+              the environment. The company retains its existing and new customers by delivering quality services,
+              ensuring a safe and healthy work environment for its employees. With innovative technologies, ethical
+              business practices, and ensuring transparency, accountability, & trust, the company also minimizes
+              environmental impacts. The GB Group shares a part of its profit with the underprivileged group and
+              impacted many lives positively.
             </p>
           </motion.div>
           <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative h-[300px] w-full md:h-[400px] lg:h-[500px]"
+          >
+            <Image
+              src="/hero/f.jpg"
+              alt="Late Amrit Lal Gupta"
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
+          </motion.div>
+        </section>
+        <section className="container py-12">
+          <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="rounded-lg bg-card p-6 shadow-md"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-8 text-center font-mono text-3xl font-bold text-primary md:text-4xl"
           >
-            <h3 className="mb-4 font-mono text-2xl font-semibold text-primary">Our Purpose</h3>
-            <ul className="list-disc space-y-2 pl-5 text-foreground">
-              <li>Provide innovative and reliable solutions.</li>
-              <li>Foster a culture of integrity and responsibility.</li>
-              <li>Contribute to the growth and development of society.</li>
-              <li>Focus on excellence to exceed customer expectations.</li>
-              <li>Pioneer new solutions to drive progress and change in the industry.</li>
-              <li>Value unity and collaboration with stakeholders to achieve common goals.</li>
-            </ul>
-          </motion.div>
-        </div>
-      </section>
+            WHY US?
+          </motion.h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="rounded-lg bg-card p-6 shadow-md"
+            >
+              <h3 className="mb-4 font-mono text-2xl font-semibold text-primary">Our Values</h3>
+              <p className="text-foreground">
+                At the heart of our success is our unwavering commitment to our values. We believe in creating long-term
+                value for our stakeholders while also promoting social and environmental sustainability. We strive to be a
+                responsible corporate citizen, investing in the communities where we operate and supporting initiatives
+                that promote education, healthcare, and other social causes. We aim to continue to innovate and explore
+                new avenues of growth while remaining true to the values. We are committed to making a positive difference
+                in the world by standing together with the community.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="rounded-lg bg-card p-6 shadow-md"
+            >
+              <h3 className="mb-4 font-mono text-2xl font-semibold text-primary">Our Purpose</h3>
+              <ul className="list-disc space-y-2 pl-5 text-foreground">
+                <li>Provide innovative and reliable solutions.</li>
+                <li>Foster a culture of integrity and responsibility.</li>
+                <li>Contribute to the growth and development of society.</li>
+                <li>Focus on excellence to exceed customer expectations.</li>
+                <li>Pioneer new solutions to drive progress and change in the industry.</li>
+                <li>Value unity and collaboration with stakeholders to achieve common goals.</li>
+              </ul>
+            </motion.div>
+          </div>
+        </section>
 
-      {/* CSR section */}
-      <section className="container py-16">
+        {/* CSR section */}
+        <section className="container py-16">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -327,138 +317,136 @@ export default function HomePage() {
           </div>
         </section>
 
-      {/* Gallery Section */}
-      <section className="container py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <motion.h2 className="mb-4 text-center font-mono text-4xl font-bold text-primary md:text-5xl" whileHover={{ scale: 1.05 }}>
-            GALLERY
-          </motion.h2>
+        {/* Gallery Section */}
+        <section className="container py-16">
           <motion.div
-            className="mx-auto mb-8 h-1 w-32 bg-primary"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          />
-          <motion.p
-            className="mx-auto max-w-4xl bg-[#2d7a7a] p-6 text-center text-lg text-white md:text-xl rounded-lg shadow-lg"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
           >
-            An active part of various national & state-organised CSR activities for the betterment of the entire community.
-          </motion.p>
-        </motion.div>
+            <motion.h2 className="mb-4 text-center font-mono text-4xl font-bold text-primary md:text-5xl" whileHover={{ scale: 1.05 }}>
+              GALLERY
+            </motion.h2>
+            <motion.div
+              className="mx-auto mb-8 h-1 w-32 bg-primary"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            />
+            <motion.p
+              className="mx-auto max-w-4xl bg-[#2d7a7a] p-6 text-center text-lg text-white md:text-xl rounded-lg shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              An active part of various national & state-organised CSR activities for the betterment of the entire community.
+            </motion.p>
+          </motion.div>
 
-        <div className="grid gap-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {/* Gallery Items */}
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/tree.png" alt="Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-4 transition-colors hover:bg-[#2d7a7a]">
-              <p className="font-semibold text-white text-lg">Tree Plantation</p>
-            </div>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/vkgupta.png" alt="Vijay Bahuguna with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
-              <p className="text-sm font-semibold text-white">Vijay Bahuguna (Former CM of Uttarakhand)</p>
-              <p className="text-xs text-white/90">VK Gupta (MD, The GB House)</p>
-            </div>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/abhinav.png" alt="Abhinav Kumar with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
-              <p className="text-sm font-semibold text-white">Abhinav Kumar (DGP Uttarakhand)</p>
-              <p className="text-xs text-white/90">VK Gupta (MD The GB house)</p>
-            </div>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/ma.png" alt="Student Running in Marathon" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
-              <p className="text-sm font-semibold text-white">Student Running in Marathon</p>
-            </div>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/treeP.png" alt="GB Employees Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
-              <p className="text-sm font-semibold text-white">GB Employees Tree Plantation</p>
-            </div>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-            <Image src="/gallery/officeM.png" alt="GB Group Team Meeting" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors ">
-              <p className="text-sm font-semibold text-white">
-                Team Meeting with Mr. Sameer Dhingra, Mr. Anirudh Gupta, and Mr. AK Raturi
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-      <section className="container py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
+          <div className="grid gap-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {/* Gallery Items */}
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/1.png" alt="Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-4 transition-colors hover:bg-[#2d7a7a]">
+                <p className="font-semibold text-white text-sm">Mr Pranav Gupta at Uttarakhand pharma and healthcare conclave and samman 2025</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/2.png" alt="Vijay Bahuguna with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
+                <p className="text-sm font-semibold text-white">Mr Vineet Kumar Gupta at Uttarakhand pharma and healthcare conclave and samman 2025</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/abhinav.png" alt="Abhinav Kumar with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
+                <p className="text-sm font-semibold text-white">Abhinav Kumar (DGP Uttarakhand)</p>
+                <p className="text-xs text-white/90">VK Gupta (MD The GB house)</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/ma.png" alt="Student Running in Marathon" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
+                <p className="text-sm font-semibold text-white">Student Running in Marathon</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/treeP.png" alt="GB Employees Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
+                <p className="text-sm font-semibold text-white">GB Employees Tree Plantation</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
+              <Image src="/gallery/vkgupta.png" alt="GB Group Team Meeting" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors ">
+                <p className="text-sm font-semibold text-white">Vijay Bahuguna (Former CM of Uttarakhand)</p>
+                <p className="text-xs text-white/90">VK Gupta (MD, The GB House)</p>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+        <section className="container py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
+          >
             <motion.h2 className="mb-4 text-center font-mono text-4xl font-bold text-primary md:text-5xl" whileHover={{ scale: 1.05 }}>
               OUR CERTIFICATE
             </motion.h2>
-          <motion.div
-            className="mx-auto mb-8 h-1 w-62 bg-primary"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-          </motion.div>
-          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="mx-auto mb-8 h-1 w-62 bg-primary"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              whileHover={{ scale: 1.05, rotateY: 5 }}
-              className="relative overflow-hidden rounded-lg shadow-2xl"
+              transition={{ duration: 0.8 }}
             >
-              <Image
-                src="/certificates/c1.png"
-                alt="IRIS Certification - Hydraulic Dampers"
-                width={800}
-                height={1000}
-                className="w-full h-auto object-contain hover:brightness-110 transition-all duration-500"
-              />
             </motion.div>
+            <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                whileHover={{ scale: 1.05, rotateY: 5 }}
+                className="relative overflow-hidden rounded-lg shadow-2xl"
+              >
+                <Image
+                  src="/certificates/c1.png"
+                  alt="IRIS Certification - Hydraulic Dampers"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-contain hover:brightness-110 transition-all duration-500"
+                />
+              </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.05, rotateY: -5 }}
-              className="relative overflow-hidden rounded-lg shadow-2xl "
-            >
-              <Image
-                src="/certificates/c2.png"
-                alt="IRIS Certification Enclosure - Hydraulic Dampers"
-                width={800}
-                height={1000}
-                className="w-full h-auto object-contain hover:brightness-110 transition-all duration-500"
-              />
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
-      <ClientsMarquee />
-    </div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                whileHover={{ scale: 1.05, rotateY: -5 }}
+                className="relative overflow-hidden rounded-lg shadow-2xl "
+              >
+                <Image
+                  src="/certificates/c2.png"
+                  alt="IRIS Certification Enclosure - Hydraulic Dampers"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-contain hover:brightness-110 transition-all duration-500"
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
+        <ClientsMarquee />
+      </div>
     </>
   )
 }

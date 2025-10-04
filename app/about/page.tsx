@@ -26,11 +26,9 @@ export default function AboutPage() {
               We feel honoured to introduce{" "}
               <motion.span
                 className="relative inline-block font-semibold text-primary cursor-pointer"
-                whileHover={{ scale: 1.1, color: "hsl(var(--accent))" }}
                 transition={{ duration: 0.2 }}>
                 <motion.span
                   className="absolute inset-0 bg-primary/10 rounded px-1 -z-10"
-                  whileHover={{ backgroundColor: "hsl(var(--primary) / 0.2)" }}
                   transition={{ duration: 0.2 }} />
                 G.B. Equipment Systems Ltd.
               </motion.span>{" "}
@@ -38,14 +36,12 @@ export default function AboutPage() {
               devices adhering to global standards, following the best practices. The GB Group, founded by Late
               <motion.span
                 className="relative inline-block font-semibold text-primary cursor-pointer"
-                whileHover={{ scale: 1.1, color: "hsl(var(--accent))" }}
                 transition={{ duration: 0.2 }}>
                 <motion.span
                   className="absolute inset-0 bg-primary/10 rounded px-1 -z-10"
-                  whileHover={{ backgroundColor: "hsl(var(--primary) / 0.2)" }}
                   transition={{ duration: 0.2 }} />
                 Amrit Lal Gupta
-              </motion.span>,{" "}
+              </motion.span>{" "}
               is amongst India’s few business houses serving the Indian Railways, Defence Sector, Power Sector,
               Heavy Earth Moving Equipment, Oil Sector etc. GB Group, exports its products to South East Asia, Europe &
               the Middle East.
@@ -56,14 +52,12 @@ export default function AboutPage() {
               {" "}
               <motion.span
                 className="relative inline-block font-semibold text-primary cursor-pointer"
-                whileHover={{ scale: 1.1, color: "hsl(var(--accent))" }}
                 transition={{ duration: 0.2 }}>
                 <motion.span
                   className="absolute inset-0 bg-primary/10 rounded px-1 -z-10"
-                  whileHover={{ backgroundColor: "hsl(var(--primary) / 0.2)" }}
                   transition={{ duration: 0.2 }} />
                 aim to be the largest producer
-              </motion.span>,{" "}
+              </motion.span>{" "}
               of various equipments globally, in terms of both, quality and turnover. We provide the most economical
               equipments through continual improvement and development in technology. We work towards the
               preservation and growth of ﬂora and fauna, making GB Group a truly sustainable company.
