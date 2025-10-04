@@ -83,7 +83,7 @@ export default function HomePage() {
                 transition={{ duration: 0.2 }}
               >
                 <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-                GB Equipment Systems Ltd.
+                G.B. Equipment Systems Limited
               </motion.span>{" "}
               &{" "}
               <motion.span
@@ -92,7 +92,7 @@ export default function HomePage() {
                 transition={{ duration: 0.2 }}
               >
                 <motion.span className="absolute inset-0 bg-primary/10 rounded px-1 -z-10" />
-                GB Petro Consultants Pvt. Ltd.
+                G.B. Herbs Private Limited
               </motion.span>{" "}
               is committed to developing and directing CSR policies toward its employees, customers, suppliers, and
               the environment. The company retains its existing and new customers by delivering quality services,
@@ -350,16 +350,15 @@ export default function HomePage() {
           <div className="grid gap-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {/* Gallery Items */}
             <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-              <Image src="/gallery/tree.png" alt="Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <Image src="/gallery/1.png" alt="Tree Plantation" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
               <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-4 transition-colors hover:bg-[#2d7a7a]">
-                <p className="font-semibold text-white text-lg">Tree Plantation</p>
+                <p className="font-semibold text-white text-sm">Mr Pranav Gupta at Uttarakhand pharma and healthcare conclave and samman 2025</p>
               </div>
             </motion.div>
             <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-              <Image src="/gallery/vkgupta.png" alt="Vijay Bahuguna with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <Image src="/gallery/2.png" alt="Vijay Bahuguna with VK Gupta" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
               <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors hover:bg-[#2d7a7a]">
-                <p className="text-sm font-semibold text-white">Vijay Bahuguna (Former CM of Uttarakhand)</p>
-                <p className="text-xs text-white/90">VK Gupta (MD, The GB House)</p>
+                <p className="text-sm font-semibold text-white">Mr Vineet Kumar Gupta at Uttarakhand pharma and healthcare conclave and samman 2025</p>
               </div>
             </motion.div>
             <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
@@ -382,11 +381,10 @@ export default function HomePage() {
               </div>
             </motion.div>
             <motion.div whileHover={{ scale: 1.02 }} className="relative h-[350px] overflow-hidden">
-              <Image src="/gallery/officeM.png" alt="GB Group Team Meeting" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <Image src="/gallery/vkgupta.png" alt="GB Group Team Meeting" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
               <div className="absolute bottom-0 left-0 right-0 bg-[#2d7a7a]/80 backdrop-blur-sm p-3 transition-colors ">
-                <p className="text-sm font-semibold text-white">
-                  Team Meeting with Mr. Sameer Dhingra, Mr. Anirudh Gupta, and Mr. AK Raturi
-                </p>
+                <p className="text-sm font-semibold text-white">Vijay Bahuguna (Former CM of Uttarakhand)</p>
+                <p className="text-xs text-white/90">VK Gupta (MD, The GB House)</p>
               </div>
             </motion.div>
           </div>
